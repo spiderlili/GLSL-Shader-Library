@@ -1,3 +1,3 @@
 # GLSL-Shader-Library
-GLSL Shaders
+Test GLSL Shaders:
 http://editor.thebookofshaders.com/
