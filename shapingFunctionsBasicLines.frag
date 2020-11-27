@@ -37,8 +37,8 @@ void main() {
     backgroundColor = (1.0 - plotLine) * backgroundColor + plotLine * lineColorGreen;
 
     //plot a curve along Y, raise x to the power of 5.0 (powerToX) to make a curved line
-    float pct = plotCurveLineY(st, yPos);
-    backgroundColor = (1.0 - pct) * backgroundColor + pct * lineColorRed;
+    float plotCurve = plotCurveLineY(st, yPos);
+    backgroundColor = (1.0 - plotCurve) * backgroundColor + plotCurve * lineColorRed;
     
     gl_FragColor = vec4(backgroundColor,1.0);
 }
