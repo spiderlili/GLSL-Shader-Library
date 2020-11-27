@@ -17,9 +17,9 @@ float plotLinearLineY(vec2 st)
     return smoothstep(lineThickness, 0.0, abs(st.y - st.x));
 }
 
-float plotCurveLineY(vec2 st, float pct)
+float plotCurveLineY(vec2 st, float plotCoordinateY)
 {
-    return smoothstep(pct - lineThickness, pct, st.y) - smoothstep(pct, pct + lineThickness, st.y);
+    return smoothstep(plotCoordinateY - lineThickness, plotCoordinateY, st.y) - smoothstep(plotCoordinateY, plotCoordinateY + lineThickness, st.y);
 }
 
 void main() {
